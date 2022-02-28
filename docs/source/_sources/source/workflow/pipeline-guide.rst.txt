@@ -1,0 +1,79 @@
+Pipeline Guide
+--------------
+
+Where helping users to run a workflow with a combination of many tasks.
+
+Create 
+======
+
+Step 1: Click Create new button
+
+.. image:: ../img/workflow/create_workflow_1.png
+    :align: center
+
+Step 2: Select tools: Double click tool to select -> Use the mouse to connect the output point of the first tool to the input point of the next tool.
+
+.. image:: ../img/workflow/create_workflow_2.png
+    :align: center
+
+Step 3: Click |save|  icon to save pipeline or |refresh|  icon to refresh.
+	
+Step 4: Type pipeline name -> Click Apply button
+
+.. image:: ../img/workflow/create_workflow_3.png
+    :align: center
+
+=> Pipeline is created.
+
+.. image:: ../img/workflow/create_workflow_4.png
+    :align: center
+
+Edit
+====
+
+Step 1: Click |edit|  icon
+
+.. |edit| image:: ../icon/edit.png
+
+.. image:: ../img/workflow/edit_workflow_1.png
+    :align: center
+
+Step 2: Edit data
+
+Step 3: Click |save| icon to save or |send| to run directly 
+
+.. |send| image:: ../icon/send.png
+
+Step 4: Type new name
+
+Step 5: Click Apply button  
+
+Run 
+===
+
+You can run like step 3 of item 9.2 or click |run| icon
+
+.. |run| image:: ../icon/run.png
+
+.. image:: ../img/workflow/run_workflow_1.png
+    :align: center
+
+Click Apply button
+
+.. image:: ../img/workflow/run_workflow_2.png
+    :align: center
+
+Wait task success at tab Pipeline Task
+
+Delete
+======
+
+Click |delete| icon
+
+.. |delete| image:: ../icon/delete.png
+
+.. image:: ../img/workflow/delete_workflow_1.png
+    :align: center
+
+Click the Delete button to confirm.
+

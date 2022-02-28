@@ -1,0 +1,19 @@
+version: 2
+
+python:
+  version: 3.8
+  install:
+    - requirements: docs/requirements.txt
+    - method: pip
+      path: .
+
+sphinx:
+  configuration: docs/conf.py
+
+build:
+  apt_packages:
+    - inkscape
+
+formats:
+  - epub
+  - pdf

@@ -1,0 +1,52 @@
+Base Features
+-------------
+
+Search
+======
+
+Allow search datasets by name (1), model (2):
+
+.. image:: ../img/dataset/search_dataset_1.png
+    :align: center
+
+Edit
+====
+
+Click |pencil| icon or click right mouse -> Click Edit button on each dataset. Then update input
+
+.. image:: ../img/dataset/edit_dataset_1.png
+    :align: center
+
+Step 1: Type input
+
+1. Type dataset name
+2. Select image from images list
+3. Edit layers:
+
+   * Click |zoom_to| icon to Zoom to
+
+   * Click |pencil| icon to Edit
+
+.. |zoom_to| image:: ../icon/zoom_to.png
+
+4. Add tag
+
+Step 2: Click Update button
+
+Add to map
+==========
+
+Click icon or click right mouse -> Click Add to map button to add to map: show all layer of dataset
+
+.. image:: ../img/dataset/add_map_dataset_1.png
+    :align: center
+
+Delete
+======
+
+Click icon or click right mouse -> Click Delete button:
+
+.. image:: ../img/dataset/delete_dataset_1.png
+    :align: center
+
+After clicking the Confirm button to delete.

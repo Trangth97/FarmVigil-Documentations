@@ -1,0 +1,28 @@
+Shared with me
+--------------
+
+Where storing and managing shared vectors. You can search the folder, vector by name or order by date, name.
+
+Click the tab Shared with me to start.
+
+Make copy 
+=========
+
+Click |copy| icon on vector -> Click Confirm button. Copied vector named: name + “copy”
+
+Delete 
+======
+
+Click trash icon -> Click Confirm button
+
+.. image:: ../img/vector/swm_delete_vector.png
+    :align: center 
+
+View in Map
+===========
+
+Click eye icon to view image in map
+
+.. image:: ../img/vector/swm_add_map_vector.png
+    :align: center 
+

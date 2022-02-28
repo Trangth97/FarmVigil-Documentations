@@ -1,0 +1,262 @@
+Toolbar
+-------
+
+.. image:: ../img/map/map_toolbar.png
+    :align: center
+
+Share
+=====
+
+Allow users to share maps for other users by link.
+
+Step 1: Create map
+
+Step 2: Click Share button
+
+.. image:: ../img/map/map_share_1.png
+    :align: center
+
+Step 3: Create link
+
+Type link and description
+
+.. image:: ../img/map/map_share_2.png
+    :align: center
+
+Step 4: Click Submit button
+
+After submitting a link, the link will be created at tab Links. Click tab Links to check.
+
+Step 5: Copy link and send to other users
+
+Click |copy| icon to copy link:
+
+.. image:: ../img/map/map_share_3.png
+    :align: center
+
+Print
+=====
+
+Step 1: Click Print button:
+
+.. image:: ../img/map/map_print_1.png
+    :align: center
+
+Step 2: Type input before print:
+
+.. image:: ../img/map/map_print_2.png
+    :align: center
+
+Step 3: Click print icon
+
+Enter the parameters:
+
+.. image:: ../img/map/map_print_3.png
+    :align: center
+
+Step 4: Click Save button 
+
+Capture
+=======
+
+Allow users to take screenshots of the map at that time.
+
+Click Capture button:
+
+.. image:: ../img/map/map_capture_1.png
+    :align: center
+
+Tools
+=====
+
+:doc:`Tools <../imagery/toolbar-for-analysis>`
+
+Identify
+=========
+
+Allow to view attribute value for a feature or pixel value for each band of image.
+
+Click Identify button:
+
+.. image:: ../img/map/map_identify_1.png
+    :align: center
+
+Click on a feature or point image to show value.
+
+Training
+========
+
+* Step 1: Click “Training” button in Maps
+
+.. image:: ../img/map/map_training_1.png
+    :align: center
+
+* Step 2: Type input
+
+1. Training model name
+2. Select 1 of 4 types:
+  * Classification (SK-CL-01)
+  * Classification SK-CL-02-SAR)
+  * Edge detection (SK-ED-01)
+  * Object detection (SK-OD-01)
+  * Multi Object Detection (SK-MD-01)
+3. Each type will have the config to adjust the model with data. Changing the config click on |setting| icon 
+
+.. |setting| image:: ../icon/setting.png
+
+- **Classification (SK-CL-01)**: There are 7 functions which can change: Epoch, Training size, N Filters, Batch normalization, Dropout, Optimizer, Loss Function, Metrics.
+    
+    * **Epoch**: a hyperparameter that defines the number times that the learning algorithm will work through the entire training dataset
+    * **Training size**: the size of images which are cropped from the original images. 
+    * **N Filters**: is the number of kernel
+    * **Batch Normalization**: this method normalize the features (the output of each layer after going through the activations) to a zero-means state with a standard deviation of 1
+    * **Dropout**: A simple and powerful regularization technique 
+    * **Optimizer**: Optimizers are algorithms or methods used to change the attributes of your neural network such as weights and learning rate in order to reduce the losses.
+        
+        * Adam optimizer: An algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments
+        * Adadelta optimizer: is a more robust extension of Adagrad that adapts learning rates based on a moving window of gradient updates,instead of accumulating all past gradients
+        * Stochastic gradient descent optimizer: An iterative method for optimizing an objective function with suitable smoothness properties
+        * Adagrad optimizer: an optimizer with parameter-specific learning rates, which are adapted relative to how frequently a parameter gets updated during training
+   
+    * **Loss Function**: Neural networks are trained using stochastic gradient descent and require that you choose a loss function when designing and configuring your model.
+      
+        * Categorical cross-entropy: is used for single label categorization. This is when only one category is applicable for each data point. In other words, an example can belong to one class only.
+        * Binary cross-entropy: is used on yes/no decisions, e.g., multi-label classification. The loss tells you how wrong your model’s predictions are. For instance, in multi-label problems, where an example can belong to multiple classes at the same time, the model tries to decide for each class whether the example belongs to that class or not.
+        * Mean squared error: is the most commonly used loss function for regression. The loss is the mean overseen data of the squared differences between true and predicted values, or writing it as a formula.
+
+    * **Metrics**: metric for evaluating classification models
+
+        * Accuracy: is the fraction of predictions our model got right. the percentage of correct predictions in total number predictions
+        * Binary Accuracy: can also be calculated in terms of positives and negatives. It calculates the percentage of predicted values that match with actual values for binary labels. 
+        * Categorical Accuracy: calculates the percentage of predicted values that match with actual values for one-hot labels.
+- **Classification (SK-CL-02-SAR)**: There are 2 functions: Epoch and Training size are same above.
+- **Edge detection (SK-ED-01)**: the config has only one option:Epoch
+- **Object detection (SK-OD-01)**: There are 10 hyperparameter to change: Training size, RPN anchor scale, Epoch 1, Epoch 2, Epoch 3, Step per epoch, Validation steps, Max ground truth instances, ROI positive ratio, RPN NMS ratio
+    
+    * Training size: the size of images which are cropped from the original images. 
+    * RPN anchor scale: Length of square anchor side in pixels
+    * Epoch 1, 2, 3: the number times that the learning algorithm will work through the entire training dataset
+    * Step per epoch: Number of training steps per epoch. This doesn't need to match the size of the training set. Tensorboard updates are saved at the end of each epoch, so setting this to a smaller number means getting more frequent TensorBoard updates. Validation stats are also calculated at each epoch end and they might take a while, so don't set this too small to avoid spending a lot of time on validation stats.
+    8 Validation steps: Number of validation steps to run at the end of every training epoch. A bigger number improves accuracy of validation stats, but slows down the training.
+    * Max ground truth instances: Maximum number of ground truth instances to use in one cut-image (with size equal training size)
+    * ROI positive ratio: Percent of positive ROIs - Region of interest- used to train classifier/mask heads.
+    * RPN NMS ratio: Non-max suppression threshold to filter RPN proposals.
+
+- **Multi Object Detection (SK-MD-01)**: There are 11 hyperparameter: Epoch 1, Epoch 2, Anchor box scales, Anchor box ratio, RPN stride, Number RPN predict, RPN min overlap, RPN max overlap, Classifier min overlap, Classifier max overlap, Pooling regions.
+	
+    * Epoch 1, Epoch 2: a hyperparameter that defines the number times that the learning algorithm will work through the entire training dataset
+    * Anchor box scales: the length of box’s side
+    * Anchor box ratio: the ratio between length and width.
+    * RPN stride: modifies the amount of movement’s anchor box over the image
+    * Number RPN predict: number of boxes will be taken in each stride step. 
+    * RPN min overlap: is threshold to select the negatives
+    * RPN max overlap:is threshold to select the positives.
+    * Classifier min overlap:is threshold to select the negatives
+    * Classifier max overlap: is threshold to select the positives.
+    * Pooling regions: Region of interest pooling to convert the features inside any valid region of interest into a small feature map with a fixed spatial extent
+
+4. Click Continue button
+5. Select image: select image which you want to train
+
+Type name into search input to search image -> Click image. Click location icon to add image to map.
+
+.. image:: ../img/map/map_training_2.png
+    :align: center
+
+6. Click Continue button
+7. Training area layer: select exist layer or draw new one
+
+.. image:: ../img/map/map_training_3.png
+    :align: center
+
+.. image:: ../img/map/map_training_4.png
+    :align: center
+
+.. image:: ../img/map/map_training_5.png
+    :align: center
+
+.. image:: ../img/map/map_training_6.png
+    :align: center
+
+.. image:: ../img/map/map_training_7.png
+    :align: center
+
+* Step 3: Click Run button
+
+.. image:: ../img/map/map_training_8.png
+    :align: center
+
+System creates tasks that train models. When the Task is successful, you will see your model in the Model Menu
+
+Detection
+=========
+
+* Step 1: Click Detection button in Maps
+
+.. image:: ../img/map/map_detection_1.png
+    :align: center
+
+* Step 2: Select input
+1. Select image you want to detect
+2. Select model you want to use
+
+.. image:: ../img/map/map_detection_2.png
+    :align: center
+
+* Step 3: Click Continue button
+* Step 4: Type name
+* Step 5: Click Run button
+
+.. image:: ../img/map/map_detection_3.png
+    :align: center
+
+System creates tasks that detect objects. When a Task is successful, you will see your result in the Result Menu.
+
+Dataset 
+=======
+
+Allow users to create training dataset.
+
+For Object detection: only select an annotation. As for Classification detection: select many annotations.
+
+Step 1: Click Dataset button
+
+.. image:: ../img/map/map_dataset_1.png
+    :align: center
+
+Step 2: Type input
+
+.. image:: ../img/map/map_dataset_2.png
+    :align: center
+
+Step 3: Click Submit button
+
+Accuracy
+========
+
+Allow users to check accuracy of model
+
+* Step 1: Click Accuracy button
+
+.. image:: ../img/map/map_accuracy_1.png
+    :align: center
+
+* Step 2: Type accurate report input
+
+1. Type report name
+2. Select model
+3. Select image
+
+.. image:: ../img/map/map_accuracy_2.png
+    :align: center
+
+* Step 3: Click Continue button
+* Step 4: Validate data: Select exist layer or create new one
+
+.. image:: ../img/map/map_accuracy_3.png
+    :align: center
+
+* Step 5: Click Run button
+After clicking, a task will be created. When a task is successful, check the result in the menu Model. 
+* Step 6: Check result in Models: Model detail of selected model -> Tab Accurate Report
+

@@ -1,0 +1,9 @@
+Introduction
+============
+
+chưa biết viết gì...
+
+In La
+
+.. image:: ../img/landing_page/pricing_1.png
+    :align: center
