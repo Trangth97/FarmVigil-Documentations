@@ -1,4 +1,4 @@
-Farm Vigil
+Servey
 -------
 
 AOI is the area of interest and stores and manages all AOIs you upload or download. AOI can be used in tools: raster clip, vector clip and training tool. 

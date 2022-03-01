@@ -1,4 +1,4 @@
-.. EOfactory user guide documentation master file, created by
+.. Farm Vigil user guide documentation master file, created by
    sphinx-quickstart on Sat Sep 11 14:45:02 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -9,9 +9,31 @@ Welcome to Farm Vigil's documentation!
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Index
+   :caption: Dashboard
 
-   source/aoi/my-aois
+   source/Dashboard/dashboard
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: User
+
+   source/User/register
+   source/User/user-management
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Servey
+
+   source/Servey/servey
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Option
+
+   source/Option/option
 
 **Brief description**
 
@@ -55,26 +77,5 @@ Click |ellipsis-v| icon and select action:
 .. image:: ./source/img/intro/wks_3.png
    :align: center
 
-Users can search workspace by name or tag (with # at the beginning of the tag)
-
-Select the workspace which you want to work with. Then the dashboard appears:
-
-.. image:: ./source/img/intro/dashboard.png
-   :align: center
-
-You can easily search image, vector, model, dataset, result by name:
-
-.. image:: ./source/img/intro/search_1.png
-   :align: center
-
-or search detail by click Show more link:
-
-.. image:: ./source/img/intro/search_2.png
-   :align: center
-
-.. image:: ./source/img/intro/search_3.png
-   :align: center
-
-At the left bar you can navigate to different dashboard views such as.
 
 
