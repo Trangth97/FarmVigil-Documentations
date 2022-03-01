@@ -1,10 +1,11 @@
 User Management
 ==============
 
+Search
+-------
+
 Create New User
 ---------------
-
-Administrator create new user
 
 Update User
 -----------
