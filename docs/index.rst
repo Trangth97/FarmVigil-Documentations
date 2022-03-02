@@ -35,6 +35,13 @@ Welcome to Farm Vigil's documentation!
 
    source/Option/option
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Mobile
+
+   source/Mobile/mobile
+
 **Brief description**
 
 This section provides an introduction and overview to the EO factory- Earth Observation Factory. EO factory is where you display and explore GIS dataset for your study area by using the latest advancement in artificial intelligence, where you detect objects such as buildings, roads, ships, trees and so on. EO factory is also the application you use to train your own model in your own image. Moreover, EO factory provides the analyzing toolkit for your image or vector file.

@@ -19,7 +19,7 @@ slug = re.sub(r'\W+', '-', project.lower())
 version = theme_version
 release = theme_version_full
 author = u'EOfactory'
-copyright = u'2020 Skymap Global. All rights reserved.'
+copyright = u'2022 Skymap Global. All rights reserved.'
 language = 'en'
 
 extensions = [
