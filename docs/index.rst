@@ -18,15 +18,15 @@ Welcome to Farm Vigil's documentation!
    :hidden:
    :caption: User
 
-   source/User/register
+   source/User/auth
    source/User/user-management
 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Servey
+   :caption: Survey
 
-   source/Servey/servey
+   source/Survey/survey
 
 .. toctree::
    :maxdepth: 2

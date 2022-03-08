@@ -12,8 +12,8 @@ Allow users to filter by Date, State, District, SubDistrict, Type.
 .. image:: ../img/dashboard/filter.png
     :align: center
 
-Detail record
--------------
+View detail 
+-----------
 
 .. |record_detail| image:: ../icon/record_detail.png
 
