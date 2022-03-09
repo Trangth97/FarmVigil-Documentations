@@ -21,6 +21,8 @@ Ngoài những trường mặc định trên, khi tạo survey form thì ngườ
 Để tạo mới 1 section thì click "Add new section" button trong mục Section Data.
 Sau khi thêm thông tin field thì chọn Section để chứa.
 
+Riêng type "Combo Box" sẽ khác những type khác ở chỗ sẽ liên quan đến Option. Chọn "Select your option" để chọn option trong mục Option Management đã tạo.
+
 Edit Survey
 -----------
 
