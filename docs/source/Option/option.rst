@@ -1,8 +1,8 @@
 Option Management
 =================
 
-Create new option
------------------
+Create option
+-------------
 
 Search
 ------

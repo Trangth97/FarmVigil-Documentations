@@ -26,7 +26,7 @@ Edit Survey
 
 .. |edit_survey| image:: ../icon/edit_survey.png
 
-Click |edit_survey| to edit survey.
+Click |edit_survey| to edit survey. Đối với những survey mà đã có record thì sẽ không thể chỉnh sửa trừ khi phải xóa hết records được tạo trên survey đó.
 
 Copy Survey
 -----------
@@ -40,5 +40,5 @@ Delete Survey
 
 .. |delete_survey| image:: ../icon/delete_user.png
 
-Click |delete_survey| to delete survey.
+Click |delete_survey| to delete survey. Đối với những survey mà đã có record thì sẽ không thể xóa trừ khi phải xóa hết records được tạo trên survey đó.
 
