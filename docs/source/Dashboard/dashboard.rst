@@ -1,13 +1,13 @@
 Dashboard
 =========
 
-Hiển thị:
+Dashboard page will show:
 
-* Bộ lọc
-* Bản đồ hiển thị vị trí các Farms tương ứng với bộ lọc
-* Thống kê bao gồm: Total Farms, Total Farmers, Total Executives, Pending Vertifications, Verified Farms, Total Area (in ha)
+* Filter
+* Map showing the location of Farms corresponding to the filter
+* Statistics include: Total Farms, Total Farmers, Total Executives, Pending Vertifications, Verified Farms, Total Area (in ha)
 * Survey Monitor: Monitor survey by state
-* Danh sách Farms: include 4 status (pending, verified, modified, rejected)
+* List of Farms: include 4 status (Pending, Verified, Modified, Rejected)
 
 .. image:: ../img/dashboard/dashboard.png
     :align: center
@@ -16,7 +16,7 @@ Filter
 ------
 
 Allow users to filter by Date, State, District, SubDistrict, Type.
-Sau khi lọc, trên map sẽ hiển thị những farms phù hợp với bộ lọc, phía dưới hiển thị danh sách farms tương ứng và bên phải hiển thị thống kê.
+After filtering, the map will display farms that match the filter, the bottom shows a list of corresponding farms and the right shows statistics.
 
 .. image:: ../img/dashboard/filter.png
     :align: center
@@ -26,12 +26,12 @@ Farms Management
 
 Users can search farms by Type or Farmer Name.
 
-Hiển thị danh sách farms ứng với từng trạng thái:
+Display a list of farms corresponding to each status:
 
-* Pending Farms: Những farms đang ở chế độ pending để verify.
-* Verified Farms: Những farms đã được verified.
-* Modified Farms: Những farms sau khi tạo đã được truy cập chỉnh sửa nhưng chưa được verified or rejected.
-* Rejected Farms: Những farms đã rejected.
+* Pending Farms: The farms are in pending mode to verify.
+* Verified Farms: Verified farms.
+* Modified Farms: The farms after creation have been accessed and edited but have not been verified or rejected.
+* Rejected Farms: Farms that have been rejected.
 
 .. |record_detail| image:: ../icon/detail_record.png
 
@@ -40,14 +40,14 @@ Click |record_detail| to view farm detail.
 .. image:: ../img/dashboard/record_detail.png
     :align: center
 
-Trong màn hình chi tiết, người dùng được phép sử dụng công cụ để vẽ lại các farm trên map, upload/delete image để có cái nhìn rõ hơn về farm đó và thông tin chi tiết ở bên phải màn hình. 
-Bên cạnh đó, người dùng click Reject button to reject farm or Verify button to verify farm. Sau đó các farm sẽ được chuyển sang trạng thái tương ứng ở bên ngoài màn hình dashboard.
+In the details screen, the user is allowed to use the tool to redraw the farms on the map, upload/delete image to have a better view of that farm and detailed information on the right side of the screen.
+Besides, the user clicks Reject button to reject farm or Verify button to verify farm. Then the farms will be switched to the corresponding state outside the dashboard screen.
 
 .. |display_setting| image:: ../icon/display_setting.png
 
-Click |display_setting| to setting display farms (chọn những trường muốn hiển thị trong list).
+Click |display_setting| to setting display farms (select the fields you want to display in the list).
 
 Interact map
 ------------
 
-Người dùng trực tiếp chọn farm trên map để xem thông tin chi tiết. Có những khu vực các farms ở gần nhau nên sẽ được group lại và hiển thị số lượng tổng.
+Users directly select farm on the map to see detailed information. There are areas where the farms are close together, so they will be grouped and display the total number.

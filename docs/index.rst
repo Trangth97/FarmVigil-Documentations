@@ -18,7 +18,6 @@ Welcome to Farm Vigil's documentation!
    :hidden:
    :caption: User
 
-   source/User/auth
    source/User/user-management
 
 .. toctree::
@@ -44,45 +43,34 @@ Welcome to Farm Vigil's documentation!
 
 **Brief description**
 
-This section provides an introduction and overview to the EO factory- Earth Observation Factory. EO factory is where you display and explore GIS dataset for your study area by using the latest advancement in artificial intelligence, where you detect objects such as buildings, roads, ships, trees and so on. EO factory is also the application you use to train your own model in your own image. Moreover, EO factory provides the analyzing toolkit for your image or vector file.
-EO factory is a free platform for extracting crucial features from satellite images or even drone images quickly and simply
+...
 
 **Get Start**
 
-Open the web browser and type `https://eofactory.ai <https://eofactory.ai>`_ in the URL address bar and press enter. On entering the correct URL, below the landing page will appear.
+Open the web browser and type `http://farm.skymapglobal.vn <http://farm.skymapglobal.vn>`_ in the URL address bar and press enter. On entering the correct URL, below the login page will appear.
 
-You want buy eofactory's package to use: click tab Pricing on menu:
+Click on Register link, the registration page will appear.
 
-.. image:: ./source/img/landing_page/pricing_1.png
+Registering an account includes 2 groups of information: User Info (Name, Phone Number, Email, Password, Confirm Password), Company Info (Company Name, Country).
+This created account will be an adminstrator account and can create other accounts to provide to users in your company.
+
+.. image:: ./source/img/user/register.png
     :align: center
 
-If you want to experience, you can use free package (Professional) by register an account. Each package has information: object, price, benifit.
+To start using the system, users enter information including Email and Password previously registered (for adminstrator) or provided (for dashboard role):
 
-Click on JOIN FOR FREE, the registration page will appear.
+.. image:: ./source/img/user/login.png
+    :align: center
 
-.. image:: ./source/img/intro/create_account_1.png
-   :align: center
+After successful login, users can update their profile including Name, Phone Number and perform Change Password.
+Click the avatar in the top right corner of the screen, the system displays the profile to update.
+To change the password, check the "Change password" checkbox, the system will allow the user to re-enter the old password for authentication.
 
-The user can create a new account by filling up the Sign up from before clicking on “Register Account” then “login” with email and password or easier using “Sign up with google” with Google’s account
+And after you have registered for an account but forgot your password, please click "Forgot Your Password?" link. Then enter your email to reset the password.
 
-.. image:: ./source/img/intro/create_account_2.png
-   :align: center
+.. image:: ./source/img/user/forgot_password.png
+    :align: center
 
-After that, the dashboard appears to guide new users to introduce workspace in EOF and create the first workspace.
-
-.. image:: ./source/img/intro/wks_1.png
-   :align: center
-
-The first page of EO Factory is about the workspace; users can store and manage the workspace following each project.
-Here, users can share workspace with another, edit or delete workspace. The top shows the four most recent workspaces. Below is a list of all workspaces included yours and shared workspaces
-
-.. image:: ./source/img/intro/wks_2.png
-   :align: center
-
-Click |ellipsis-v| icon and select action:
-
-.. image:: ./source/img/intro/wks_3.png
-   :align: center
 
 
 
